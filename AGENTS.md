@@ -2,8 +2,8 @@
 
 ## Build/Test Commands
 - `npm install` - Install dependencies
-- `npm run dev` - Start development server with live reload on port 3000
-- `npm start` - Start local server on port 3000
+- `npm run dev` - Start development server with live reload on port 3050
+- `npm start` - Start local server on port 3050
 - `npm run build` - Build the project (copies assets, no compilation needed)
 - `npm run deploy` - Deploy to GitHub Pages using gh-pages
 - `npm run preview` - Preview the built site locally

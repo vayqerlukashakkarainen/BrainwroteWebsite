@@ -4,11 +4,11 @@
   "description": "Official website for Transcribr - Cross-platform audio transcription application",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve . -p 3000",
-    "dev": "npx serve . -p 3000 --live",
+    "start": "npx serve . -p 3050",
+    "dev": "npx live-server . --port=3050 --open",
     "build": "npm run copy-assets",
     "copy-assets": "echo 'No build step needed for static site'",
-    "preview": "npx serve dist -p 3000",
+    "preview": "npx serve dist -p 3050",
     "deploy": "gh-pages -d .",
     "prepare-deploy": "npm run build"
   },
@@ -23,6 +23,7 @@
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^6.1.0",
+    "live-server": "^1.2.2",
     "serve": "^14.2.1"
   },
   "repository": {

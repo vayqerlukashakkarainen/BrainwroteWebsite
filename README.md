@@ -24,7 +24,7 @@ npm install
 npm run dev
 ```
 
-Opens a development server with live reload at http://localhost:3000
+Opens a development server with live reload at http://localhost:3050
 
 ### Build
 
