@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'KeepCalm';
+    src: url('fonts/KeepCalm-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    padding: 48px;
+}
+
+h1 {
+    font-family: 'KeepCalm', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #37352f;
+    letter-spacing: -0.03em;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #686567;
+    margin-bottom: 16px;
+}
+
+.coming-soon {
+    font-size: 16px;
+    color: #37352f;
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.download-btn {
+    padding: 16px 32px;
+    background: #37352f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.download-btn:hover {
+    background: #2d2a26;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .container {
+        padding: 24px;
+    }
+}
