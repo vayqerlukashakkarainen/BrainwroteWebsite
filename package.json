@@ -1,37 +1,41 @@
 {
-  "name": "transcribr-website",
-  "version": "1.0.0",
-  "description": "Official website for Transcribr - Cross-platform audio transcription application",
-  "main": "index.html",
-  "scripts": {
-    "start": "npx serve . -p 3050",
-    "dev": "npx live-server . --port=3050 --open",
-    "build": "npm run copy-assets",
-    "copy-assets": "echo 'No build step needed for static site'",
-    "preview": "npx serve dist -p 3050",
-    "deploy": "gh-pages -d .",
-    "prepare-deploy": "npm run build"
-  },
-  "keywords": [
-    "transcription",
-    "audio",
-    "speech-to-text",
-    "website",
-    "static-site"
-  ],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gh-pages": "^6.1.0",
-    "live-server": "^1.2.2",
-    "serve": "^14.2.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/USERNAME/TranscribrWebsite.git"
-  },
-  "bugs": {
-    "url": "https://github.com/USERNAME/TranscribrWebsite/issues"
-  },
-  "homepage": "https://USERNAME.github.io/TranscribrWebsite"
+	"name": "brainwrote-website",
+	"version": "1.0.0",
+	"description": "Official website for Brainwrote - Cross-platform audio transcription application",
+	"main": "index.html",
+	"scripts": {
+		"start": "npx serve . -p 3050",
+		"dev": "npx live-server . --port=3050 --open",
+		"build": "npm run copy-assets",
+		"copy-assets": "echo 'No build step needed for static site'",
+		"preview": "npx serve dist -p 3050",
+		"deploy": "gh-pages -d .",
+		"prepare-deploy": "npm run build"
+	},
+	"keywords": [
+		"transcription",
+		"audio",
+		"speech-to-text",
+		"website",
+		"static-site"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"gh-pages": "^6.1.0",
+		"live-server": "^1.2.2",
+		"serve": "^14.2.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/USERNAME/TranscribrWebsite.git"
+	},
+	"bugs": {
+		"url": "https://github.com/USERNAME/TranscribrWebsite/issues"
+	},
+	"homepage": "https://USERNAME.github.io/TranscribrWebsite",
+	"dependencies": {
+		"@splinetool/runtime": "^1.11.4",
+		"lucide": "^0.554.0"
+	}
 }
