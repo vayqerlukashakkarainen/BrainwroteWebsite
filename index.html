@@ -1,22 +1,1296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brainwrote</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Brainwrote</h1>
-        <p class="subtitle">AI-powered audio transcription and summarization</p>
-        <p class="coming-soon">Coming Soon</p>
-        
-        <div class="download-buttons">
-            <button class="download-btn">Mac</button>
-            <button class="download-btn">Linux</button>
-            <button class="download-btn">Windows</button>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Primary Meta Tags -->
+		<title>
+			Brainwrote - Reduce your cognitive load with AI-powered organization
+		</title>
+		<meta
+			name="title"
+			content="Brainwrote - Reduce your cognitive load with AI-powered organization"
+		/>
+		<meta
+			name="description"
+			content="AI-powered audio transcription, summarization, and search engine. Organize all your workspaces, notes, and projects locally on your device. Available for Mac, Windows, and Linux."
+		/>
+		<meta
+			name="keywords"
+			content="AI notetaker, transcription, summarization, search engine, productivity, knowledge management, local AI, privacy-first"
+		/>
+		<meta name="author" content="Brainwrote" />
+		<meta name="robots" content="index, follow" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/emojis_32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="256x256"
+			href="assets/emojis_256x256.png"
+		/>
+		<link rel="apple-touch-icon" href="assets/emojis_256x256.png" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://brainwrote.com/" />
+		<meta
+			property="og:title"
+			content="Brainwrote - Reduce your cognitive load with AI-powered organization"
+		/>
+		<meta
+			property="og:description"
+			content="AI-powered audio transcription, summarization, and search engine. Organize all your workspaces, notes, and projects locally on your device."
+		/>
+		<meta
+			property="og:image"
+			content="https://brainwrote.com/assets/emojis_256x256.png"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://brainwrote.com/" />
+		<meta
+			property="twitter:title"
+			content="Brainwrote - Reduce your cognitive load with AI-powered organization"
+		/>
+		<meta
+			property="twitter:description"
+			content="AI-powered audio transcription, summarization, and search engine. Organize all your workspaces, notes, and projects locally on your device."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://brainwrote.com/assets/emojis_256x256.png"
+		/>
+
+		<!-- Theme Color -->
+		<meta name="theme-color" content="#000000" />
+		<meta name="msapplication-TileColor" content="#000000" />
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://brainwrote.com/" />
+
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://unpkg.com/lucide@latest"></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+		/>
+		<script src="feature-renders.js"></script>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navbar-container">
+				<div class="navbar-logo">
+					<img src="assets/emojis_256x256.png" alt="Brainwrote" />
+					<span>Brainwrote</span>
+				</div>
+				<div class="navbar-links">
+					<a href="#performance">About</a>
+					<a href="#pricing-plans">Pricing</a>
+					<a href="waitlist.html">Join Waitlist</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container hero">
+			<img
+				src="assets/emojis_256x256.png"
+				alt="Brainwrote Icon"
+				class="hero-icon"
+			/>
+			<p class="tagline">Reduce your cognitive load</p>
+			<h1>Brainwrote</h1>
+		</div>
+		<div class="feature-popper"></div>
+
+		<!-- Mobile feature container (in document flow) -->
+		<div class="mobile-feature-container"></div>
+
+		<!-- Feature animation footer -->
+		<div class="feature-animation-footer">
+			<div class="feature-tabs">
+				<div class="feature-tab" data-feature="0">
+					<div class="feature-tab-label">Intelligent search</div>
+					<div class="feature-tab-progress">
+						<div class="feature-tab-progress-bar"></div>
+					</div>
+				</div>
+				<div class="feature-tab" data-feature="1">
+					<div class="feature-tab-label">Connect storages</div>
+					<div class="feature-tab-progress">
+						<div class="feature-tab-progress-bar"></div>
+					</div>
+				</div>
+				<div class="feature-tab" data-feature="2">
+					<div class="feature-tab-label">Third party integrations</div>
+					<div class="feature-tab-progress">
+						<div class="feature-tab-progress-bar"></div>
+					</div>
+				</div>
+				<div class="feature-tab" data-feature="3">
+					<div class="feature-tab-label">Recording</div>
+					<div class="feature-tab-progress">
+						<div class="feature-tab-progress-bar"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="features-section">
+			<div class="features-container">
+				<div class="features-left">
+					<h2>One search for everything.</h2>
+					<img src="" alt="Search demo" class="demo-image" />
+				</div>
+
+				<div class="features-right">
+					<div class="integration-box">
+						<p class="integration-text">
+							Your notes, projects, and conversations—automatically organized
+							and instantly searchable. Everything lives on your device, always
+							ready when you need it.
+						</p>
+
+						<div class="connections-wrapper">
+							<div class="brain-center">
+								<img
+									src="assets/emojis_256x256.png"
+									alt="Brainwrote"
+									class="brain-icon"
+								/>
+							</div>
+
+							<canvas
+								id="connectionsCanvas"
+								class="connections-canvas"
+							></canvas>
+
+							<div class="app-icons">
+								<div class="app-icon" data-app="github" id="icon-0">
+									<i class="devicon-github-original"></i>
+								</div>
+								<div class="app-icon" data-app="slack" id="icon-2">
+									<i class="devicon-slack-plain"></i>
+								</div>
+								<div class="app-icon" data-app="jira" id="icon-3">
+									<i class="devicon-jira-plain"></i>
+								</div>
+								<div class="app-icon" data-app="trello" id="icon-4">
+									<i class="devicon-trello-plain"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="performance-section" id="performance">
+			<div class="performance-container">
+				<div class="performance-left">
+					<h2>On device performance.</h2>
+
+					<div class="tabs">
+						<div class="tab active" data-tab="search">
+							<i data-lucide="search"></i>
+							<div class="tab-content-text">
+								<h3>Top tier search engine</h3>
+								<p>Top grade search, on your device</p>
+							</div>
+						</div>
+
+						<div class="tab" data-tab="ai">
+							<i data-lucide="sparkles"></i>
+							<div class="tab-content-text">
+								<h3>AI enhancements</h3>
+								<p>AI ready</p>
+							</div>
+						</div>
+
+						<div class="tab" data-tab="contextual">
+							<i data-lucide="brain"></i>
+							<div class="tab-content-text">
+								<h3>Contextual awareness</h3>
+								<p>Top grade search, on your device</p>
+							</div>
+						</div>
+
+						<div class="tab" data-tab="editing">
+							<i data-lucide="file-edit"></i>
+							<div class="tab-content-text">
+								<h3>Rich Text editing</h3>
+								<p>AI summarises in editable Rich text</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="performance-right">
+					<div class="tab-panel active" data-panel="search">
+						<img src="" alt="Search demo" class="tab-image" />
+						<p class="tab-label">
+							Your notetaker catches every detail and delivers actionable
+							summaries, right where you work.
+						</p>
+					</div>
+
+					<div class="tab-panel" data-panel="ai">
+						<img src="" alt="AI enhancements demo" class="tab-image" />
+						<p class="tab-label">
+							AI-powered features enhance your workflow automatically.
+						</p>
+					</div>
+
+					<div class="tab-panel" data-panel="contextual">
+						<img src="" alt="Contextual awareness demo" class="tab-image" />
+						<p class="tab-label">
+							Smart contextual understanding of your content.
+						</p>
+					</div>
+
+					<div class="tab-panel" data-panel="editing">
+						<img src="" alt="Rich text editing demo" class="tab-image" />
+						<p class="tab-label">
+							Edit and format your summaries with rich text capabilities.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="integrations-section">
+			<div class="integrations-container">
+				<div class="integrations-left">
+					<h2>Connect third party applications.</h2>
+					<p class="integrations-description">
+						Connect your favourite and enterprise applications to extend
+						Brainwrote's capabilities.
+					</p>
+
+					<div class="chat-container">
+						<div class="chat-message chat-header">
+							<img
+								src="assets/emojis_256x256.png"
+								alt="Brain"
+								class="chat-avatar"
+							/>
+							<span class="chat-title">Have we released Tag feature?</span>
+						</div>
+
+						<div class="chat-message chat-reply">
+							<i data-lucide="slack" class="chat-icon"></i>
+							<div class="chat-text">
+								<strong>Lukas</strong>
+								<p>Tag feature is released in production</p>
+							</div>
+						</div>
+
+						<div class="chat-message chat-reply">
+							<i data-lucide="github" class="chat-icon"></i>
+							<div class="chat-text">
+								<strong>lukasvayger</strong>
+								<p>Pushed commit 544aad534 to main</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="integrations-right">
+					<div class="orbit-container">
+						<img
+							src="assets/emojis_256x256.png"
+							alt="Brainwrote"
+							class="orbit-center"
+						/>
+
+						<div class="orbit-icon" style="--angle: 0deg; --distance: 120px">
+							<i class="devicon-github-original"></i>
+						</div>
+						<div class="orbit-icon" style="--angle: 45deg; --distance: 120px">
+							<i class="devicon-slack-plain"></i>
+						</div>
+						<div class="orbit-icon" style="--angle: 90deg; --distance: 120px">
+							<i class="devicon-confluence-original"></i>
+						</div>
+						<div class="orbit-icon" style="--angle: 135deg; --distance: 120px">
+							<i class="devicon-jira-plain"></i>
+						</div>
+						<div class="orbit-icon" style="--angle: 180deg; --distance: 120px">
+							<i class="devicon-trello-plain"></i>
+						</div>
+						<div class="orbit-icon" style="--angle: 225deg; --distance: 120px">
+							<i data-lucide="calendar"></i>
+						</div>
+						<div class="orbit-icon" style="--angle: 270deg; --distance: 120px">
+							<i data-lucide="mail"></i>
+						</div>
+						<div class="orbit-icon" style="--angle: 315deg; --distance: 120px">
+							<i data-lucide="folder"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pricing-section">
+			<div class="pricing-container">
+				<h2>Available for free.</h2>
+				<p class="pricing-description">
+					Brainwrote offers a lot of functionality for free, all running
+					locally. Try it out now.
+				</p>
+
+				<div class="features-grid">
+					<div class="feature-column">
+						<h3>Free features</h3>
+						<ul class="feature-list">
+							<li>
+								<i data-lucide="check"></i>
+								<span>Unlimited workspace and folders</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i>
+								<span>AI search engine</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i>
+								<span>Unlimited workspace and folders</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i>
+								<span>Add any on-device folder and files</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i>
+								<span>Automatic code project organiser</span>
+							</li>
+						</ul>
+
+						<div class="platform-buttons">
+							<button class="platform-btn">Mac</button>
+							<button class="platform-btn">Windows</button>
+							<button class="platform-btn">Linux</button>
+						</div>
+
+						<p class="storage-note">* Requires 7gb of storage</p>
+					</div>
+
+					<div class="feature-column premium">
+						<div class="premium-badge">$5 per month</div>
+						<h3>Premium features</h3>
+						<ul class="feature-list">
+							<li>
+								<i data-lucide="check"></i>
+								<span>Unlimited AI notetaker</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i>
+								<span>Third party integrations</span>
+							</li>
+							<li>
+								<i data-lucide="circle"></i>
+								<span>이미지</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pricing-plans-section" id="pricing-plans">
+			<div class="pricing-plans-container">
+				<h2>Pricing.</h2>
+				<p class="pricing-plans-description">
+					Brainwrote is both available for free, premium or a one time purchase.
+				</p>
+
+				<div class="pricing-toggle">
+					<button class="toggle-btn active" data-period="monthly">
+						Pay monthly
+					</button>
+					<button class="toggle-btn" data-period="yearly">Pay yearly</button>
+				</div>
+
+				<p class="savings-text">Save 15% with yearly</p>
+
+				<div class="pricing-cards">
+					<div class="pricing-card">
+						<h3>Free</h3>
+						<div class="price-wrapper">
+							<span class="price">$0</span>
+							<span class="price-period">per month</span>
+						</div>
+						<p class="price-description">
+							For individuals to organize and search both personal and
+							enterprise projects and life.
+						</p>
+						<a href="waitlist.html" class="cta-btn">Join Waitlist</a>
+					</div>
+
+					<div class="pricing-card">
+						<h3>Premium</h3>
+						<div class="price-wrapper">
+							<span class="price monthly-price">$5</span>
+							<span class="price yearly-price" style="display: none"
+								>$4.25</span
+							>
+							<span class="price-period">per month</span>
+						</div>
+						<p class="price-description">
+							Get all what Brainwrote has to offer, not restrictions.
+						</p>
+						<a href="waitlist.html" class="cta-btn">Join Waitlist</a>
+					</div>
+
+					<div class="pricing-card">
+						<h3>Lifetime premium</h3>
+						<div class="price-wrapper">
+							<span class="price">$80</span>
+							<span class="price-period">one time fee</span>
+						</div>
+						<p class="price-description">
+							Purchase Brainwrote for the rest of your life, the software is
+							yours and you always have access to our server.
+						</p>
+						<a href="waitlist.html" class="cta-btn">Join Waitlist</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-grid">
+					<div class="footer-column footer-brand">
+						<div class="footer-logo">
+							<img
+								src="assets/emojis_256x256.png"
+								alt="Brainwrote"
+								class="footer-logo-img"
+							/>
+							<span class="footer-logo-text">Brainwrote</span>
+						</div>
+						<p class="footer-tagline">
+							Reduce your cognitive load with AI-powered organization.
+						</p>
+						<div class="footer-social">
+							<a href="#" class="social-link" aria-label="Twitter">
+								<i data-lucide="twitter"></i>
+							</a>
+							<a href="#" class="social-link" aria-label="GitHub">
+								<i data-lucide="github"></i>
+							</a>
+							<a href="#" class="social-link" aria-label="LinkedIn">
+								<i data-lucide="linkedin"></i>
+							</a>
+							<a href="#" class="social-link" aria-label="Discord">
+								<i data-lucide="message-circle"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="footer-column">
+						<h4>Product</h4>
+						<ul class="footer-links">
+							<li><a href="#features">Features</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#integrations">Integrations</a></li>
+							<li><a href="#changelog">Changelog</a></li>
+							<li><a href="#roadmap">Roadmap</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-column">
+						<h4>Company</h4>
+						<ul class="footer-links">
+							<li><a href="#about">About</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-column">
+						<h4>Resources</h4>
+						<ul class="footer-links">
+							<li><a href="#support">Support</a></li>
+							<li><a href="#community">Community</a></li>
+							<li><a href="#status">Status</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-column">
+						<h4>Legal</h4>
+						<ul class="footer-links">
+							<li><a href="#privacy">Privacy Policy</a></li>
+							<li><a href="#terms">Terms of Service</a></li>
+							<li><a href="#security">Security</a></li>
+							<li><a href="#cookies">Cookie Policy</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<p class="footer-copyright">
+						&copy; 2025 Brainwrote. All rights reserved.
+					</p>
+					<div class="footer-bottom-links">
+						<a href="#sitemap">Sitemap</a>
+						<a href="#accessibility">Accessibility</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			// Initialize Lucide icons
+			lucide.createIcons();
+
+			// Feature Container System
+			const featurePopperContainer = document.querySelector(".feature-popper");
+			const mobileFeatureContainer = document.querySelector(
+				".mobile-feature-container"
+			);
+
+			// Helper function to check if mobile
+			function isMobile() {
+				return window.innerWidth <= 768;
+			}
+
+			// Get the appropriate container based on screen size
+			function getFeatureContainer() {
+				return isMobile() ? mobileFeatureContainer : featurePopperContainer;
+			}
+
+			// Feature type constants
+			const FEATURE_TYPES = {
+				STATIC: "static",
+				ANIMATED: "animated",
+			};
+
+			// Animated Feature Container Class
+			class AnimatedFeatureContainer {
+				constructor(template, containerElement) {
+					this.template = template;
+					this.container = containerElement;
+					this.currentStageIndex = 0;
+					this.stageTimeouts = [];
+					this.contentElement = null;
+					this.resizeObserver = null;
+				}
+
+				start() {
+					// Create content wrapper inside container
+					this.contentElement = document.createElement("div");
+					this.contentElement.className = "feature-animated-content";
+					this.contentElement.style.width = "100%";
+					this.container.appendChild(this.contentElement);
+
+					// Setup ResizeObserver to track content height changes
+					this.setupResizeObserver();
+
+					this.runStage(0);
+				}
+
+				setupResizeObserver() {
+					this.resizeObserver = new ResizeObserver((entries) => {
+						for (let entry of entries) {
+							const height = entry.contentRect.height;
+							// Update container max-height to match content height
+							this.container.style.maxHeight = height + 40 + "px"; // +40 for padding (20px * 2)
+						}
+					});
+
+					this.resizeObserver.observe(this.contentElement);
+				}
+
+				runStage(index) {
+					if (index >= this.template.stages.length) {
+						return;
+					}
+
+					const stage = this.template.stages[index];
+					this.currentStageIndex = index;
+
+					// Render current stage (incremental updates - no clearing)
+					stage.render(this.contentElement);
+
+					// Reinitialize Lucide icons for new content
+					lucide.createIcons();
+
+					// Schedule next stage
+					if (index < this.template.stages.length - 1) {
+						const timeout = setTimeout(() => {
+							this.runStage(index + 1);
+						}, stage.duration);
+						this.stageTimeouts.push(timeout);
+					}
+				}
+
+				cleanup() {
+					this.stageTimeouts.forEach((timeout) => clearTimeout(timeout));
+					this.stageTimeouts = [];
+					if (this.resizeObserver) {
+						this.resizeObserver.disconnect();
+					}
+				}
+			}
+
+			// Define feature templates
+			const featureTemplates = [
+				{
+					type: FEATURE_TYPES.ANIMATED,
+					duration: 7000,
+					stages: [
+						{
+							duration: 2500,
+							render: renderPricingSearch,
+						},
+						{
+							duration: 2500,
+							render: renderPricingTranscript,
+						},
+						{
+							duration: 2000,
+							render: renderPricingDecisionLink,
+						},
+					],
+				},
+				{
+					type: FEATURE_TYPES.ANIMATED,
+					duration: 7000,
+					stages: [
+						{
+							duration: 2000,
+							render: renderDropZone,
+						},
+						{
+							duration: 2000,
+							render: renderFileList,
+						},
+						{
+							duration: 3000,
+							render: renderFilteredFileList,
+						},
+					],
+				},
+				{
+					type: FEATURE_TYPES.ANIMATED,
+					duration: 9000,
+					stages: [
+						{
+							duration: 2500,
+							render: renderSearchInput,
+						},
+						{
+							duration: 2000,
+							render: renderThirdPartyIcons,
+						},
+						{
+							duration: 1500,
+							render: renderFilteredThirdPartyIcons,
+						},
+						{
+							duration: 3000,
+							render: renderSearchResults,
+						},
+					],
+				},
+				{
+					type: FEATURE_TYPES.ANIMATED,
+					duration: 10000,
+					stages: [
+						{
+							duration: 2000,
+							render: renderActiveRecording,
+						},
+						{
+							duration: 1500,
+							render: renderWaveform,
+						},
+						{
+							duration: 1500,
+							render: renderTrimmedWaveform,
+						},
+						{
+							duration: 1500,
+							render: renderSummarizeButton,
+						},
+						{
+							duration: 3500,
+							render: renderSummary,
+						},
+					],
+				},
+			];
+
+			let currentFeatureContainer = null;
+			let currentAnimatedFeature = null;
+			let currentFeatureIndex = 0;
+			let progressInterval = null;
+
+			function createStaticFeatureContainer(template) {
+				const container = document.createElement("div");
+				container.className = "feature-container";
+
+				// Create header
+				const header = document.createElement("div");
+				header.className = "feature-header";
+				header.textContent = template.header;
+				container.appendChild(header);
+
+				// Create content
+				const content = document.createElement("div");
+				content.className = "feature-content";
+
+				template.content.forEach((item) => {
+					const contentItem = document.createElement("div");
+					contentItem.className = "feature-content-item";
+
+					const bullet = document.createElement("span");
+					bullet.className = "feature-bullet";
+					contentItem.appendChild(bullet);
+
+					const text = document.createElement("span");
+					text.textContent = item;
+					contentItem.appendChild(text);
+
+					content.appendChild(contentItem);
+				});
+
+				container.appendChild(content);
+
+				return container;
+			}
+
+			// Update footer tabs
+			function updateFooterTabs() {
+				const tabs = document.querySelectorAll(".feature-tab");
+				tabs.forEach((tab, index) => {
+					if (index === currentFeatureIndex) {
+						tab.classList.add("active");
+					} else {
+						tab.classList.remove("active");
+					}
+					// Reset progress bar
+					const progressBar = tab.querySelector(".feature-tab-progress-bar");
+					if (progressBar) {
+						progressBar.style.width = "0%";
+					}
+				});
+			}
+
+			// Animate progress bar
+			function animateProgress(duration) {
+				if (progressInterval) {
+					clearInterval(progressInterval);
+				}
+
+				const activeTab = document.querySelector(".feature-tab.active");
+				if (!activeTab) return;
+
+				const progressBar = activeTab.querySelector(
+					".feature-tab-progress-bar"
+				);
+				if (!progressBar) return;
+
+				const startTime = Date.now();
+				progressInterval = setInterval(() => {
+					const elapsed = Date.now() - startTime;
+					const progress = Math.min((elapsed / duration) * 100, 100);
+					progressBar.style.width = progress + "%";
+
+					if (progress >= 100) {
+						clearInterval(progressInterval);
+					}
+				}, 50);
+			}
+
+			function showFeatureContainer() {
+				// Cleanup previous animated feature if exists
+				if (currentAnimatedFeature) {
+					currentAnimatedFeature.cleanup();
+					currentAnimatedFeature = null;
+				}
+
+				// Get current template (cycle through sequentially)
+				const template = featureTemplates[currentFeatureIndex];
+
+				// Update footer tabs
+				updateFooterTabs();
+
+				// Animate progress bar
+				animateProgress(template.duration);
+
+				// Create base container
+				const container = document.createElement("div");
+				container.className = "feature-container";
+
+				// Get appropriate parent container
+				const parentContainer = getFeatureContainer();
+
+				// Position above corresponding tab on desktop, in flow on mobile
+				if (!isMobile()) {
+					// Get the corresponding tab
+					const activeTab = document.querySelector(
+						`.feature-tab[data-feature="${currentFeatureIndex}"]`
+					);
+					if (activeTab) {
+						const tabRect = activeTab.getBoundingClientRect();
+
+						// Position container centered above the tab
+						container.style.position = "absolute";
+						container.style.left = tabRect.left + "px";
+						container.style.bottom = "-8px"; // Above footer (adjust based on footer height)
+					}
+				} else {
+					container.style.position = "absolute";
+					container.style.bottom = "200px"; // Above footer (adjust based on footer height)
+					container.style.left = "auto";
+				}
+
+				parentContainer.appendChild(container);
+				currentFeatureContainer = container;
+
+				// Handle based on type
+				if (template.type === FEATURE_TYPES.STATIC) {
+					// Create static content
+					const header = document.createElement("div");
+					header.className = "feature-header";
+					header.textContent = template.header;
+					container.appendChild(header);
+
+					const content = document.createElement("div");
+					content.className = "feature-content";
+
+					template.content.forEach((item) => {
+						const contentItem = document.createElement("div");
+						contentItem.className = "feature-content-item";
+
+						const bullet = document.createElement("span");
+						bullet.className = "feature-bullet";
+						contentItem.appendChild(bullet);
+
+						const text = document.createElement("span");
+						text.textContent = item;
+						contentItem.appendChild(text);
+
+						content.appendChild(contentItem);
+					});
+
+					container.appendChild(content);
+
+					// Setup ResizeObserver for static content
+					const staticObserver = new ResizeObserver((entries) => {
+						for (let entry of entries) {
+							const height = entry.target.scrollHeight;
+							container.style.maxHeight = height + "px";
+						}
+					});
+					staticObserver.observe(container);
+
+					// Trigger animation
+					setTimeout(() => {
+						container.classList.add("visible");
+					}, 50);
+
+					// Hide after duration and move to next
+					setTimeout(() => {
+						container.classList.remove("visible");
+						container.classList.add("hiding");
+						staticObserver.disconnect();
+
+						setTimeout(() => {
+							container.remove();
+
+							// Move to next feature after current one completes
+							currentFeatureIndex =
+								(currentFeatureIndex + 1) % featureTemplates.length;
+							showFeatureContainer();
+						}, 400);
+					}, 2500);
+				} else if (template.type === FEATURE_TYPES.ANIMATED) {
+					// Trigger animation
+					setTimeout(() => {
+						container.classList.add("visible");
+					}, 50);
+
+					// Start animated sequence
+					currentAnimatedFeature = new AnimatedFeatureContainer(
+						template,
+						container
+					);
+					currentAnimatedFeature.start();
+
+					// Hide after total duration and move to next
+					setTimeout(() => {
+						container.classList.remove("visible");
+						container.classList.add("hiding");
+
+						setTimeout(() => {
+							container.remove();
+
+							// Move to next feature after current one completes
+							currentFeatureIndex =
+								(currentFeatureIndex + 1) % featureTemplates.length;
+							showFeatureContainer();
+						}, 400);
+					}, template.duration);
+				}
+			}
+
+			// Start feature container cycle
+			function startFeatureContainerCycle() {
+				// Reset to first feature
+				currentFeatureIndex = 0;
+
+				// Show first one immediately
+				showFeatureContainer();
+			}
+
+			// Start the cycle when page loads
+			if (featurePopperContainer || mobileFeatureContainer) {
+				// Wait a bit before starting
+				setTimeout(startFeatureContainerCycle, 1000);
+			}
+
+			// Handle window resize - reposition container or restart cycle
+			let wasMobile = isMobile();
+			window.addEventListener("resize", () => {
+				const nowMobile = isMobile();
+
+				// If switching between mobile/desktop, restart cycle
+				if (wasMobile !== nowMobile) {
+					wasMobile = nowMobile;
+
+					// Cleanup current containers
+					if (currentAnimatedFeature) {
+						currentAnimatedFeature.cleanup();
+						currentAnimatedFeature = null;
+					}
+					if (currentFeatureContainer) {
+						currentFeatureContainer.remove();
+						currentFeatureContainer = null;
+					}
+
+					// Restart the cycle
+					setTimeout(startFeatureContainerCycle, 500);
+				} else if (!nowMobile && currentFeatureContainer) {
+					// On desktop resize, reposition container above its tab
+					const activeTab = document.querySelector(
+						`.feature-tab[data-feature="${currentFeatureIndex}"]`
+					);
+					if (activeTab) {
+						const tabRect = activeTab.getBoundingClientRect();
+						const containerWidth = 280;
+						currentFeatureContainer.style.left =
+							tabRect.left + tabRect.width / 2 - containerWidth / 2 + "px";
+					}
+				}
+			});
+
+			// Navbar scroll behavior
+			const navbar = document.querySelector(".navbar");
+			let lastScrollTop = 0;
+			let scrollThreshold = 100;
+
+			window.addEventListener("scroll", () => {
+				const scrollTop =
+					window.pageYOffset || document.documentElement.scrollTop;
+
+				if (scrollTop > scrollThreshold) {
+					navbar.classList.add("visible");
+				} else {
+					navbar.classList.remove("visible");
+				}
+
+				lastScrollTop = scrollTop;
+			});
+
+			// Smooth scroll for all anchor links
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener("click", function (e) {
+					const href = this.getAttribute("href");
+
+					// Skip if it's just "#" or empty
+					if (href === "#" || href.length <= 1) return;
+
+					const targetId = href.substring(1);
+					const targetElement = document.getElementById(targetId);
+
+					if (targetElement) {
+						e.preventDefault();
+
+						const navbarHeight = navbar.offsetHeight;
+						const targetPosition = targetElement.offsetTop - navbarHeight - 20;
+
+						window.scrollTo({
+							top: targetPosition,
+							behavior: "smooth",
+						});
+					}
+				});
+			});
+
+			// Tab functionality
+			const tabs = document.querySelectorAll(".tab");
+			const tabPanels = document.querySelectorAll(".tab-panel");
+
+			tabs.forEach((tab) => {
+				tab.addEventListener("click", () => {
+					const tabName = tab.dataset.tab;
+
+					// Remove active class from all tabs and panels
+					tabs.forEach((t) => t.classList.remove("active"));
+					tabPanels.forEach((p) => p.classList.remove("active"));
+
+					// Add active class to clicked tab and corresponding panel
+					tab.classList.add("active");
+					const activePanel = document.querySelector(
+						`[data-panel="${tabName}"]`
+					);
+					if (activePanel) {
+						activePanel.classList.add("active");
+					}
+				});
+			});
+
+			// Chat animation on scroll
+			const chatContainer = document.querySelector(".chat-container");
+			const chatHeader = document.querySelector(".chat-header");
+			const chatReplies = document.querySelectorAll(".chat-reply");
+
+			const observerOptions = {
+				threshold: 0.3,
+				rootMargin: "0px",
+			};
+
+			const chatObserver = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (
+						entry.isIntersecting &&
+						!entry.target.classList.contains("animated")
+					) {
+						entry.target.classList.add("animated");
+
+						// Show header immediately
+						setTimeout(() => {
+							chatHeader.classList.add("visible");
+						}, 100);
+
+						// Show replies with delay
+						chatReplies.forEach((reply, index) => {
+							setTimeout(
+								() => {
+									reply.classList.add("visible");
+								},
+								1500 + index * 600
+							);
+						});
+					}
+				});
+			}, observerOptions);
+
+			if (chatContainer) {
+				chatObserver.observe(chatContainer);
+			}
+
+			// Pricing toggle functionality
+			const toggleBtns = document.querySelectorAll(".toggle-btn");
+			const monthlyPrice = document.querySelector(".monthly-price");
+			const yearlyPrice = document.querySelector(".yearly-price");
+
+			toggleBtns.forEach((btn) => {
+				btn.addEventListener("click", () => {
+					// Remove active class from all buttons
+					toggleBtns.forEach((b) => b.classList.remove("active"));
+
+					// Add active class to clicked button
+					btn.classList.add("active");
+
+					// Toggle price display
+					const period = btn.dataset.period;
+					if (period === "yearly") {
+						monthlyPrice.style.display = "none";
+						yearlyPrice.style.display = "inline";
+					} else {
+						monthlyPrice.style.display = "inline";
+						yearlyPrice.style.display = "none";
+					}
+				});
+			});
+
+			// Canvas-based connection animations
+			const canvas = document.getElementById("connectionsCanvas");
+			const ctx = canvas.getContext("2d");
+			const wrapper = document.querySelector(".connections-wrapper");
+			const brainCenter = document.querySelector(".brain-center");
+			const appIcons = document.querySelectorAll(".app-icon");
+
+			// Set canvas size
+			function resizeCanvas() {
+				const rect = wrapper.getBoundingClientRect();
+				canvas.width = rect.width;
+				canvas.height = rect.height;
+			}
+			resizeCanvas();
+			window.addEventListener("resize", resizeCanvas);
+
+			// Particle class for animation along curves
+			class Particle {
+				constructor(path, delay) {
+					this.path = path;
+					this.progress = 0;
+					this.delay = delay;
+					this.delayCounter = 0;
+					this.speed = 0.004 + Math.random() * 0.004;
+				}
+
+				update() {
+					if (this.delayCounter < this.delay) {
+						this.delayCounter++;
+						return;
+					}
+
+					this.progress += this.speed;
+					if (this.progress > 1) {
+						this.progress = 0;
+						this.delayCounter = 0;
+					}
+				}
+
+				draw() {
+					if (this.delayCounter < this.delay) return;
+
+					const point = this.getPointOnCurve(this.progress);
+					ctx.beginPath();
+					ctx.arc(point.x, point.y, 3, 0, Math.PI * 2);
+					ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+					ctx.fill();
+				}
+
+				getPointOnCurve(t) {
+					// Quadratic Bezier curve formula
+					const p0 = this.path.start;
+					const p1 = this.path.control;
+					const p2 = this.path.end;
+
+					const x =
+						Math.pow(1 - t, 2) * p0.x +
+						2 * (1 - t) * t * p1.x +
+						Math.pow(t, 2) * p2.x;
+					const y =
+						Math.pow(1 - t, 2) * p0.y +
+						2 * (1 - t) * t * p1.y +
+						Math.pow(t, 2) * p2.y;
+
+					return { x, y };
+				}
+			}
+
+			// Get positions for brain center and icons
+			function getPositions() {
+				const brainRect = brainCenter.getBoundingClientRect();
+				const wrapperRect = wrapper.getBoundingClientRect();
+
+				const brainPos = {
+					x: brainRect.left - wrapperRect.left + brainRect.width / 2,
+					y: brainRect.top - wrapperRect.top + brainRect.height / 2,
+				};
+
+				const iconPositions = Array.from(appIcons).map((icon) => {
+					const rect = icon.getBoundingClientRect();
+					return {
+						x: rect.left - wrapperRect.left + rect.width / 2,
+						y: rect.top - wrapperRect.top + rect.height / 2,
+					};
+				});
+
+				return { brainPos, iconPositions };
+			}
+
+			// Create paths and particles
+			let particles = [];
+			function initParticles() {
+				particles = [];
+				const { brainPos, iconPositions } = getPositions();
+
+				iconPositions.forEach((iconPos, index) => {
+					// Create curved path from icon to brain
+					const path = {
+						start: iconPos,
+						end: brainPos,
+						control: {
+							x: (iconPos.x + brainPos.x) / 2,
+							y: (iconPos.y + brainPos.y) / 2 - 20,
+						},
+					};
+
+					// Create multiple particles per path with different delays
+					const particlesPerPath = 2;
+					const baseDelay = index * 60; // Stagger between different paths
+
+					for (let i = 0; i < particlesPerPath; i++) {
+						particles.push(new Particle(path, baseDelay + i * 60));
+					}
+				});
+			}
+
+			// Draw curved lines
+			function drawLines() {
+				const { brainPos, iconPositions } = getPositions();
+
+				ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+				ctx.lineWidth = 2;
+
+				iconPositions.forEach((iconPos) => {
+					ctx.beginPath();
+					ctx.moveTo(iconPos.x, iconPos.y);
+
+					// Quadratic curve
+					const controlX = (iconPos.x + brainPos.x) / 2;
+					const controlY = (iconPos.y + brainPos.y) / 2 - 20;
+
+					ctx.quadraticCurveTo(controlX, controlY, brainPos.x, brainPos.y);
+					ctx.stroke();
+				});
+			}
+
+			// Animation loop
+			function animate() {
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+				drawLines();
+
+				particles.forEach((particle) => {
+					particle.update();
+					particle.draw();
+				});
+
+				requestAnimationFrame(animate);
+			}
+
+			// Initialize and start
+			setTimeout(() => {
+				initParticles();
+				animate();
+			}, 100);
+
+			// Reinitialize on window resize
+			let resizeTimeout;
+			window.addEventListener("resize", () => {
+				clearTimeout(resizeTimeout);
+				resizeTimeout = setTimeout(() => {
+					resizeCanvas();
+					initParticles();
+				}, 200);
+			});
+		</script>
+	</body>
 </html>
