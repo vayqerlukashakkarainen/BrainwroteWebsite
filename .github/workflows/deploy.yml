@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: "main"
 
 jobs:
   build_and_deploy:
@@ -24,11 +24,11 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+          BASE_PATH: "/${{ github.event.repository.name }}"
         run: npm run build
 
       - name: Add CNAME
-        run: echo "brainwrote.luhakk.com" > ./CNAME
+        run: echo "brainwrote.com" > ./CNAME
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

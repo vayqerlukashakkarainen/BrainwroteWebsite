@@ -117,10 +117,11 @@
 							<i data-lucide="gift"></i>
 							<span>Limited Offer</span>
 						</div>
-						<h2>First 200 Subscribers Get Full Access</h2>
+						<h2>First 100 Subscribers Get Full Access Free</h2>
 						<p>
-							Be among the first 200 users to join our waitlist and receive a
+							Be among the <strong>first 100 users</strong> to join our waitlist and receive a
 							<strong>free, full version</strong> of Brainwrote when we launch publicly.
+							All subscribers after will receive a <strong>5% discount</strong> on their purchase.
 						</p>
 					</div>
 
@@ -255,6 +256,12 @@
 		<script>
 			// Initialize Lucide icons
 			lucide.createIcons();
+
+			// Make navbar visible immediately on waitlist page
+			const navbar = document.querySelector(".navbar");
+			if (navbar) {
+				navbar.classList.add("visible");
+			}
 		</script>
 	</body>
 </html>
