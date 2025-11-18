@@ -112,7 +112,9 @@
 			<div class="hero-cta">
 				<a href="waitlist.html" class="hero-waitlist-btn">
 					<span>Join Waitlist</span>
-					<span class="hero-waitlist-badge">First 100 get free full access</span>
+					<span class="hero-waitlist-badge"
+						>First 100 get free full access</span
+					>
 				</a>
 			</div>
 		</div>
@@ -151,6 +153,17 @@
 			</div>
 		</div>
 
+		<section class="problem-statement-section">
+			<div class="problem-statement-container">
+				<p class="problem-statement-text">
+					Your data is scattered across countless apps and services, trapped in
+					silos you don't control. Finding what you need means switching between
+					platforms, losing context, and relying on internet connections that
+					aren't always there.
+				</p>
+			</div>
+		</section>
+
 		<section class="features-section">
 			<div class="features-container">
 				<div class="features-left">
@@ -167,6 +180,10 @@
 						</p>
 
 						<div class="connections-wrapper">
+							<div class="computer-device">
+								<i data-lucide="monitor"></i>
+							</div>
+
 							<div class="brain-center">
 								<img
 									src="assets/emojis_256x256.png"
@@ -183,15 +200,23 @@
 							<div class="app-icons">
 								<div class="app-icon" data-app="github" id="icon-0">
 									<i class="devicon-github-original"></i>
+									<div class="app-label"></div>
+								</div>
+								<div class="app-icon" data-app="notion" id="icon-1">
+									<i data-lucide="file-text"></i>
+									<div class="app-label"></div>
 								</div>
 								<div class="app-icon" data-app="slack" id="icon-2">
 									<i class="devicon-slack-plain"></i>
+									<div class="app-label"></div>
 								</div>
 								<div class="app-icon" data-app="jira" id="icon-3">
 									<i class="devicon-jira-plain"></i>
+									<div class="app-label"></div>
 								</div>
 								<div class="app-icon" data-app="trello" id="icon-4">
 									<i class="devicon-trello-plain"></i>
+									<div class="app-label"></div>
 								</div>
 							</div>
 						</div>
@@ -318,29 +343,93 @@
 							class="orbit-center"
 						/>
 
-						<div class="orbit-icon" style="--angle: 0deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 0deg; --distance: 120px"
+							data-integration="github"
+						>
 							<i class="devicon-github-original"></i>
+							<div class="orbit-popover">
+								<strong>GitHub</strong>
+								<p>Connect your repositories, issues, and pull requests</p>
+							</div>
 						</div>
-						<div class="orbit-icon" style="--angle: 45deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 45deg; --distance: 120px"
+							data-integration="slack"
+						>
 							<i class="devicon-slack-plain"></i>
+							<div class="orbit-popover">
+								<strong>Slack</strong>
+								<p>Sync messages, channels, and conversations</p>
+							</div>
 						</div>
-						<div class="orbit-icon" style="--angle: 90deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 90deg; --distance: 120px"
+							data-integration="confluence"
+						>
 							<i class="devicon-confluence-original"></i>
+							<div class="orbit-popover">
+								<strong>Confluence</strong>
+								<p>Import your team documentation and knowledge base</p>
+							</div>
 						</div>
-						<div class="orbit-icon" style="--angle: 135deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 135deg; --distance: 120px"
+							data-integration="jira"
+						>
 							<i class="devicon-jira-plain"></i>
+							<div class="orbit-popover">
+								<strong>Jira</strong>
+								<p>Track issues, tickets, and project management</p>
+							</div>
 						</div>
-						<div class="orbit-icon" style="--angle: 180deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 180deg; --distance: 120px"
+							data-integration="trello"
+						>
 							<i class="devicon-trello-plain"></i>
+							<div class="orbit-popover">
+								<strong>Trello</strong>
+								<p>Access your boards, cards, and task lists</p>
+							</div>
 						</div>
-						<div class="orbit-icon" style="--angle: 225deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 225deg; --distance: 120px"
+							data-integration="calendar"
+						>
 							<i data-lucide="calendar"></i>
+							<div class="orbit-popover">
+								<strong>Calendar</strong>
+								<p>Sync events, meetings, and schedules</p>
+							</div>
 						</div>
-						<div class="orbit-icon" style="--angle: 270deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 270deg; --distance: 120px"
+							data-integration="email"
+						>
 							<i data-lucide="mail"></i>
+							<div class="orbit-popover">
+								<strong>Email</strong>
+								<p>Search through your inbox and attachments</p>
+							</div>
 						</div>
-						<div class="orbit-icon" style="--angle: 315deg; --distance: 120px">
+						<div
+							class="orbit-icon"
+							style="--angle: 315deg; --distance: 120px"
+							data-integration="files"
+						>
 							<i data-lucide="folder"></i>
+							<div class="orbit-popover">
+								<strong>Files</strong>
+								<p>Connect cloud storage and local documents</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -379,6 +468,10 @@
 								<i data-lucide="check"></i>
 								<span>Automatic code project organiser</span>
 							</li>
+							<li>
+								<i data-lucide="check"></i>
+								<span>1200 minutes of AI notetaker</span>
+							</li>
 						</ul>
 
 						<div class="platform-buttons">
@@ -400,11 +493,16 @@
 							</li>
 							<li>
 								<i data-lucide="check"></i>
-								<span>Third party integrations</span>
-							</li>
-							<li>
-								<i data-lucide="circle"></i>
-								<span>이미지</span>
+								<div class="feature-with-description">
+									<span class="feature-title">Third party integrations</span>
+									<p class="feature-description">
+										Connect your apps and sync everything locally. Brainwrote's
+										intelligent search automatically links related information
+										across platforms—GitHub issues, Slack messages, Jira
+										tickets, and more. All data stays on your device, completely
+										private.
+									</p>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -439,6 +537,25 @@
 							For individuals to organize and search both personal and
 							enterprise projects and life.
 						</p>
+						<ul class="pricing-features">
+							<li>
+								<i data-lucide="check"></i
+								><span>Unlimited workspace and folders</span>
+							</li>
+							<li><i data-lucide="check"></i><span>AI search engine</span></li>
+							<li>
+								<i data-lucide="check"></i
+								><span>Add any on-device folder and files</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i
+								><span>Automatic code project organiser</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i
+								><span>1200 minutes of AI notetaker</span>
+							</li>
+						</ul>
 						<a href="waitlist.html" class="cta-btn">Join Waitlist</a>
 					</div>
 
@@ -452,8 +569,19 @@
 							<span class="price-period">per month</span>
 						</div>
 						<p class="price-description">
-							Get all what Brainwrote has to offer, not restrictions.
+							Get all what Brainwrote has to offer, no restrictions.
 						</p>
+						<ul class="pricing-features">
+							<li>
+								<i data-lucide="check"></i><span>Everything in Free</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i><span>Unlimited AI notetaker</span>
+							</li>
+							<li>
+								<i data-lucide="check"></i><span>Third party integrations</span>
+							</li>
+						</ul>
 						<a href="waitlist.html" class="cta-btn">Join Waitlist</a>
 					</div>
 
@@ -464,9 +592,14 @@
 							<span class="price-period">one time fee</span>
 						</div>
 						<p class="price-description">
-							Purchase Brainwrote for the rest of your life, the software is
-							yours and you always have access to our server.
+							All premium features, forever. One payment, lifetime access.
 						</p>
+						<ul class="pricing-features">
+							<li>
+								<i data-lucide="check"></i><span>Everything in Premium</span>
+							</li>
+							<li><i data-lucide="check"></i><span>Lifetime updates</span></li>
+						</ul>
 						<a href="waitlist.html" class="cta-btn">Join Waitlist</a>
 					</div>
 				</div>
@@ -1137,7 +1270,52 @@
 			const ctx = canvas.getContext("2d");
 			const wrapper = document.querySelector(".connections-wrapper");
 			const brainCenter = document.querySelector(".brain-center");
+			const computerDevice = document.querySelector(".computer-device");
 			const appIcons = document.querySelectorAll(".app-icon");
+
+			// Contextual labels for each app
+			const appLabels = {
+				github: [
+					"Issue created",
+					"PR opened",
+					"Wiki updated",
+					"Commit pushed",
+					"Release published",
+				],
+				notion: ["Page created", "Note saved", "Task added", "Document shared"],
+				slack: ["Message received", "Channel updated", "File shared"],
+				jira: [
+					"Ticket created",
+					"Status changed",
+					"Sprint updated",
+					"Comment added",
+					"Epic linked",
+				],
+				trello: [
+					"Card moved",
+					"Checklist updated",
+					"Label added",
+					"Due date set",
+					"Attachment added",
+				],
+			};
+
+			// Show label for an app icon
+			function showLabel(iconElement, appName) {
+				const labelElement = iconElement.querySelector(".app-label");
+				if (!labelElement) return;
+
+				const labels = appLabels[appName];
+				if (!labels) return;
+
+				const randomLabel = labels[Math.floor(Math.random() * labels.length)];
+				labelElement.textContent = randomLabel;
+				labelElement.classList.add("visible");
+
+				setTimeout(() => {
+					labelElement.classList.remove("visible");
+				}, 2500);
+			}
 
 			// Set canvas size
 			function resizeCanvas() {
@@ -1150,12 +1328,24 @@
 
 			// Particle class for animation along curves
 			class Particle {
-				constructor(path, delay) {
+				constructor(
+					path,
+					delay,
+					iconIndex,
+					iconElement,
+					appName,
+					showLabelOnStart
+				) {
 					this.path = path;
 					this.progress = 0;
 					this.delay = delay;
 					this.delayCounter = 0;
 					this.speed = 0.004 + Math.random() * 0.004;
+					this.iconIndex = iconIndex;
+					this.iconElement = iconElement;
+					this.appName = appName;
+					this.labelShown = false;
+					this.showLabelOnStart = showLabelOnStart;
 				}
 
 				update() {
@@ -1164,10 +1354,21 @@
 						return;
 					}
 
+					// Show label when particle starts moving
+					if (
+						!this.labelShown &&
+						this.progress === 0 &&
+						this.showLabelOnStart
+					) {
+						showLabel(this.iconElement, this.appName);
+						this.labelShown = true;
+					}
+
 					this.progress += this.speed;
 					if (this.progress > 1) {
 						this.progress = 0;
 						this.delayCounter = 0;
+						this.labelShown = false;
 					}
 				}
 
@@ -1200,14 +1401,20 @@
 				}
 			}
 
-			// Get positions for brain center and icons
+			// Get positions for brain center, computer, and icons
 			function getPositions() {
 				const brainRect = brainCenter.getBoundingClientRect();
+				const computerRect = computerDevice.getBoundingClientRect();
 				const wrapperRect = wrapper.getBoundingClientRect();
 
 				const brainPos = {
 					x: brainRect.left - wrapperRect.left + brainRect.width / 2,
 					y: brainRect.top - wrapperRect.top + brainRect.height / 2,
+				};
+
+				const computerPos = {
+					x: computerRect.left - wrapperRect.left + computerRect.width / 2,
+					y: computerRect.top - wrapperRect.top + computerRect.height / 2,
 				};
 
 				const iconPositions = Array.from(appIcons).map((icon) => {
@@ -1218,16 +1425,20 @@
 					};
 				});
 
-				return { brainPos, iconPositions };
+				return { brainPos, computerPos, iconPositions };
 			}
 
 			// Create paths and particles
 			let particles = [];
 			function initParticles() {
 				particles = [];
-				const { brainPos, iconPositions } = getPositions();
+				const { brainPos, computerPos, iconPositions } = getPositions();
 
+				// Particles from app icons to brain
 				iconPositions.forEach((iconPos, index) => {
+					const iconElement = appIcons[index];
+					const appName = iconElement.getAttribute("data-app");
+
 					// Create curved path from icon to brain
 					const path = {
 						start: iconPos,
@@ -1238,23 +1449,52 @@
 						},
 					};
 
-					// Create multiple particles per path with different delays
-					const particlesPerPath = 2;
-					const baseDelay = index * 60; // Stagger between different paths
+					// Reduced particles per path (1 instead of 2) and longer delays
+					const particlesPerPath = 1;
+					const baseDelay = index * 250; // Longer stagger between different paths
 
 					for (let i = 0; i < particlesPerPath; i++) {
-						particles.push(new Particle(path, baseDelay + i * 60));
+						// Only show label for the first particle (i === 0) to avoid spam
+						const showLabel = i === 0;
+						particles.push(
+							new Particle(
+								path,
+								baseDelay + 500,
+								index,
+								iconElement,
+								appName,
+								showLabel
+							)
+						);
 					}
 				});
+
+				// Particles from brain to computer (no labels)
+				const brainToComputerPath = {
+					start: brainPos,
+					end: computerPos,
+					control: {
+						x: (brainPos.x + computerPos.x) / 2,
+						y: (brainPos.y + computerPos.y) / 2,
+					},
+				};
+
+				// Create 2 particles for brain to computer connection
+				for (let i = 0; i < 2; i++) {
+					particles.push(
+						new Particle(brainToComputerPath, i * 200, -1, null, null, false)
+					);
+				}
 			}
 
 			// Draw curved lines
 			function drawLines() {
-				const { brainPos, iconPositions } = getPositions();
+				const { brainPos, computerPos, iconPositions } = getPositions();
 
 				ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
 				ctx.lineWidth = 2;
 
+				// Draw lines from icons to brain
 				iconPositions.forEach((iconPos) => {
 					ctx.beginPath();
 					ctx.moveTo(iconPos.x, iconPos.y);
@@ -1266,6 +1506,12 @@
 					ctx.quadraticCurveTo(controlX, controlY, brainPos.x, brainPos.y);
 					ctx.stroke();
 				});
+
+				// Draw line from brain to computer
+				ctx.beginPath();
+				ctx.moveTo(brainPos.x, brainPos.y);
+				ctx.lineTo(computerPos.x, computerPos.y);
+				ctx.stroke();
 			}
 
 			// Animation loop
@@ -1297,6 +1543,70 @@
 					initParticles();
 				}, 200);
 			});
+
+			// Orbit Animation System
+			(function () {
+				const orbitContainer = document.querySelector(".orbit-container");
+				const orbitIcons = document.querySelectorAll(".orbit-icon");
+
+				if (!orbitContainer || orbitIcons.length === 0) return;
+
+				let animationSpeed = 1; // 1 = normal, 0 = stopped
+				let targetSpeed = 1;
+				let rotationAngle = 0;
+				let isHovering = false;
+
+				// Get initial angles from CSS custom properties
+				const iconData = Array.from(orbitIcons).map((icon) => {
+					const angle = parseFloat(icon.style.getPropertyValue("--angle")) || 0;
+					const distance =
+						parseFloat(icon.style.getPropertyValue("--distance")) || 120;
+					return { element: icon, initialAngle: angle, distance };
+				});
+
+				function updateOrbitPositions() {
+					iconData.forEach(({ element, initialAngle, distance }) => {
+						const currentAngle = initialAngle + rotationAngle;
+						const rad = (currentAngle * Math.PI) / 180;
+
+						// Calculate position
+						const x = Math.cos(rad) * distance;
+						const y = Math.sin(rad) * distance;
+
+						// Apply position transform only (no rotation on container)
+						element.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+					});
+				}
+
+				function animateOrbit() {
+					// Smooth speed transition
+					if (Math.abs(animationSpeed - targetSpeed) > 0.001) {
+						animationSpeed += (targetSpeed - animationSpeed) * 0.05; // Smooth easing
+					} else {
+						animationSpeed = targetSpeed;
+					}
+
+					// Update rotation angle based on current speed
+					rotationAngle += 0.05 * animationSpeed; // Adjust base speed here
+
+					updateOrbitPositions();
+					requestAnimationFrame(animateOrbit);
+				}
+
+				// Hover events
+				orbitContainer.addEventListener("mouseenter", () => {
+					isHovering = true;
+					targetSpeed = 0; // Slow down to stop
+				});
+
+				orbitContainer.addEventListener("mouseleave", () => {
+					isHovering = false;
+					targetSpeed = 1; // Speed back up to normal
+				});
+
+				// Start animation
+				animateOrbit();
+			})();
 		</script>
 	</body>
 </html>
